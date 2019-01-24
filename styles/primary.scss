@@ -1,13 +1,17 @@
 @charset "utf-8";
 
 $primary: purple;
+
+// Font stack
 $family-sans-serif: "Rubik", BlinkMacSystemFont, -apple-system, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary: $family-sans-serif;
 
-// Google Fonts
+// Primary font "Rubik" from Google Fonts
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i");
 
+// Bulma
 @import "bulma/bulma.sass";
 
 div.wcs__background_10 {
@@ -34,4 +38,27 @@ div.navbar-brand {
 
 strong {
     color: inherit !important;
+}
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: white;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
 }
