@@ -10,7 +10,7 @@ $family-sans-serif: "Rubik", BlinkMacSystemFont, -apple-system, "Segoe UI",
 
 @import "bulma/bulma.sass";
 
-div.wcs__background_10.hero-body {
+div.wcs__background_10 {
     $light-gray-overlay: rgba(0, 0, 0, 0.35);
     background: linear-gradient($light-gray-overlay, $light-gray-overlay),
         url("/content/code_stock.png");
